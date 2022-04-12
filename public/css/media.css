@@ -1,0 +1,65 @@
+@media screen and (min-width: 426px) and (max-width: 768px){
+    #about{
+        padding: 30px 10% 50px !important;
+    }
+
+    #portfolio{
+        padding: 5% 10% !important;
+    }
+    #portfolio .logo{
+        gap: 20px !important;
+    }
+
+    .footer1{
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 0.75fr !important;
+        grid-template-areas: 
+        "section1 section3"
+        "section2 section2";
+    }
+    .section1{
+        grid-area: section1;
+    }
+    .section2{
+        grid-area: section2;
+    }
+    .section3{
+        grid-area: section3;
+    }
+    .footer1 div{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+    nav{
+        flex-direction: column;
+    }
+
+    #portfolio{
+        padding: 5% 5% !important;
+    }
+    #portfolio .logo{
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    #about{
+        padding: 30px 5% 50px !important;
+    }
+    #about .text{
+        text-align: justify !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+
+    #contact input, #contact textarea{
+        width: 300px !important;
+    }
+
+    .footer1{
+        padding: 20px 20%;
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+    }
+}
